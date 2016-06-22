@@ -20,7 +20,7 @@ from <app> import settings
 urlpatterns = [
     url(r'^', include('app.urls')),
     url(r'^admin/', admin.site.urls),
-    urlpatterns += patterns('',
-        (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
-    )
+   # urlpatterns += patterns('',
+ #       (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
+ #   )
 ]
