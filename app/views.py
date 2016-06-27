@@ -12,9 +12,10 @@ def index(request):
     cursor.execute('''SELECT * FROM usuarios''')
     row = cursor.fetchone()
   
-
+ # palabra= "El usuario es: "+row.get
 
     return HttpResponse(row)
+
 
     #return HttpResponse("Index del proyecto. Juli sos el rey.")
 
